@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "transactions"
+version = "0.1.0"
+description = ""
+authors = ["Glushkov Alex <avgl@mail.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pytest = "^8.0.2"
+
+[tool.poetry.group.dev.dependencies]
+DateTime = "^5.4"
+pytest-cov = "^4.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
