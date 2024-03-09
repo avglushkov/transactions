@@ -1,7 +1,7 @@
 from utils.functions import transactions_data, date_conversion, datetime_conversion, get_latest_transactions, card_accaunt_masking
 
 
-latest_transactions = get_latest_transactions(transactions_data)[:50] #выбираем пять последних транзакций со статусом EXECUTED
+latest_transactions = get_latest_transactions(transactions_data)[:5] #выбираем пять последних транзакций со статусом EXECUTED
 
 for n in latest_transactions: # Запускаем цикл по пяти выбранным транзакциям
     for m in transactions_data(): # Для каждой записи из загруженного json файла
